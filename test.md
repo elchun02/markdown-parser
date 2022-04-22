@@ -1,3 +1,3 @@
 # Title
 
-[lik](halloweengrl.jpg)
+[link](image.jpg)
