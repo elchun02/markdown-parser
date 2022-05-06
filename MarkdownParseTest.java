@@ -18,16 +18,16 @@ public class MarkdownParseTest {
     
     @Test
     public void test1() throws Exception{
-        Path fileName = Path.of("./test-file.md");
-        String content = Files.readString(fileName);
+        Path nameOfFile = Path.of("./test-file.md");
+        String content = Files.readString(nameOfFile);
         List<String> expected = new ArrayList<>(List.of("https://something.com", "some-thing.html"));
         assertEquals(expected, MarkdownParse.getLinks(content));
     }
 
     @Test
     public void test2() throws Exception {
-        Path fileName = Path.of("./testfile5.md");
-        String content = Files.readString(fileName);
+        Path nameOfFile = Path.of("./testfile5.md");
+        String content = Files.readString(nameOfFile);
         List<String> expected = new ArrayList<>(List.of());
         assertEquals(expected, MarkdownParse.getLinks(content));
     }
